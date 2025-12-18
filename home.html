@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beatriz Rodrigues | Designer, Front-end & IA</title>
+    
+    <link rel="stylesheet" href="home.css"> 
+
+    <script src="home.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <header id="header"> <nav class="navbar container"> <a href="#home" class="logo">Beatriz Rodrigues</a>
+            
+            <ul class="nav-links" id="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#destaque">Destaques</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
+                <li><button id="theme-toggle" aria-label="Alternar Tema"><i class="fas fa-moon"></i></button></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger" aria-controls="menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+    <main> <section id="home" class="home container">
+            <h2 class="headline">👋 Olá, eu sou a Beatriz Rodrigues</h2>
+            <h3 class="subtitle">Design • Front-end • Inteligência Artificial</h3>
+            <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+            <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+            </section>
+
+
+        <section id="sobre" class="sobre section-padding container">
+            <h2>Sobre mim</h2>
+            <div class="sobre-content">
+                <img src="assets/img/perfil.jpeg" alt="Foto de perfil de Beatriz Rodrigues" class="profile-photo">
+                <div class="bio-text">
+                    <p>
+                        O design foi meu primeiro passo no mundo criativo. Depois, me aventurei no
+                        front-end para transformar ideias em experiências interativas. Nesse caminho,
+                        me apaixonei pela inteligência artificial e hoje uno design, desenvolvimento
+                        e IA para criar soluções com estética, funcionalidade e tecnologia aplicada em
+                        machine learning, deep learning e aplicações web.
+                    </p>
+                    <p class="objetivo">
+                        Objetivo profissional: busco oportunidades em que eu possa aplicar design,
+                        front-end e inteligência artificial para resolver problemas, otimizar processos
+                        e transformar ideias em produtos reais e inteligentes.                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="areas" class="areas section-padding container">
+            <h2 class="section-title">Áreas de atuação</h2>
+
+            <div class="grid areas-grid"> <div class="card service-card">
+                    <i class="fas fa-palette icon-design"></i> <h3>Design</h3>
+                        <p>
+                            Criação de UX/UI, identidade visual, social media e protótipos,
+                            com foco total na experiência do usuário.
+                        </p>
+                    <span class="tools"><strong><br>Ferramentas:</strong> Figma, Canva, Affinity.</span>
+                </div>
+
+                <div class="card service-card">
+                    <i class="fas fa-code icon-frontend"></i> <h3>Front-end</h3>
+                        <p>
+                            Criação de interfaces responsivas e otimizadas, com foco em performance
+                            e acessibilidade.
+                        </p>
+                    <span class="tools"><strong><br>Techs:</strong> HTML5, CSS3, JavaScript, React, Bootstrap, QtCreator.</span>
+                    <span class="tools"><strong><br><br>Ferramentas:</strong> QtCreator, VS Code, Git, GitHub.</span>
+                </div>
+
+                <div class="card service-card">
+                    <i class="fas fa-brain icon-ia"></i> <h3>Inteligência Artificial</h3>
+                        <p>
+                            Automação, criação de modelos de classificação, engenharia de prompts
+                            e integração de IA em aplicações web. Desenvolvimento de soluções
+                            utilizando redes neurais e ferramentas de machine learning.
+                        </p>
+                    <span class="tools"><strong><br>Techs:</strong> TensorFlow, Keras, Scikit-learn, PyTorch.</span>
+                    <span class="tools"><strong><br><br>Ferramentas:</strong> Python, Jupyter Notebook, Pandas, NumPy.</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="projetos" class="projetos section-padding container">
+            <h2 class="section-title">Projetos</h2>
+            
+            <div class="filter-buttons">
+                <button data-filter="all" class="filter-btn active">Todos</button> 
+                <button data-filter="design" class="filter-btn">Design</button>
+                <button data-filter="frontend" class="filter-btn">Front-end</button>
+                <button data-filter="ia" class="filter-btn">IA</button>
+            </div>
+
+            <div class="projects-grid"> 
+                    <article class="card project-card" data-category="design"> 
+                    <h3>Identidade Visual de Clube de Vôlei</h3>
+                    <p>Criação de Identidade Visual de Clube de Vôlei</p>
+                    <span class="techs">Figma • Canva •  Affinity</span>
+                    <a href="https://www.behance.net/gallery/240149885/Identidade-Visual-de-Clube-de-Volei" target="_blank" class="link-projeto"><br>Ver no Behance <i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="design">
+                    <h3>Identidade Visual de Clínica Dermatológica</h3>
+                    <p>Identidade visual da clínica dermatológica Derm Care.</p>
+                    <span class="techs">Figma • Canva •  Affinity</span>
+                    <a href="https://www.behance.net/gallery/240149653/Identidade-Visual-de-Clinica-Dermatologica" target="_blank" class="link-projeto"><br>Ver no Behance <i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="design"> 
+                    <h3>Identidade Visual de Engenheiro Civil</h3>
+                    <p>Identidade visual do engenheiro civil Fabrício Andrade.</p>
+                    <span class="techs">Figma • Canva •  Affinity</span>
+                    <a href="https://www.behance.net/gallery/240149409/Proposta-de-Identidade-Engenheiro-Civil" target="_blank" class="link-projeto"><br>Ver no Behance <i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="design"> 
+                    <h3>Colaboração em Identidade Visual de Evento - FIT 2023</h3>
+                    <p>
+                        Participei da criação da identidade visual e da produção de mídias sociais
+                        do Fórum de Inovação e Tecnologia 2023.
+                    </p>
+                    <span class="techs">Figma </span>
+                    <a href="https://www.figma.com/design/fjNwbn78LECG3RCDQUXajB/FIT-2023---Documento-de-Identidade-Visual--Copy-?node-id=56-309&t=vQ0ggpdVaDl1RcZ1-1" target="_blank" class="link-projeto"><br>Ver no Figma<i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="design"> 
+                    <h3>Colaboração em Identidade Visual de Evento - FIT 2024</h3>
+                    <p>
+                        Participei da criação da identidade visual e da produção de mídias sociais
+                        do Fórum de Inovação e Tecnologia 2024.
+                    </p>
+                    <span class="techs">Figma </span>
+                    <a href="https://www.figma.com/design/qQPmepPRCK8opD56MNWvcj/FIT-2025--Copy-?node-id=6-7&t=VhrPzw2aUZqRtr2B-1" target="_blank" class="link-projeto"><br>Ver no Figma<i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="design"> 
+                    <h3>Protótipo de Gerenciamento de Loja de Franquia</h3>
+                    <p>
+                        Protótipo de sistema para gerenciamento de lojas de franquia,
+                        com controle de unidades, vendas e produtos.
+                    </p>
+                    <span class="techs">Figma </span>
+                    <a href="https://www.figma.com/design/M1l7z6gNxoIdwvGEa7hzL6/Trab.-IHC-2024--Copy-?node-id=0-1&t=LtDdAyo7O0dRB2RW-1" target="_blank" class="link-projeto"><br>Ver no Figma<i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="design"> 
+                    <h3>Colaboração no Protótipo Caminhos do Interior</h3>
+                    <p>
+                        Participei da criação do protótipo Caminhos do Interior, um site que promove
+                        o turismo nos sertões de Crateús, destacando pontos de interesse
+                        ambiental, religioso, gastronômico, entre outros.
+                    </p>
+                    <span class="techs">Figma </span>
+                    <a href="https://www.figma.com/design/1dSo7uaKPKFP6ke7FTqMRX/Design---Caminhos-do-Interior--Copy-?node-id=59-27&t=eFwTtVqAMtucZ7fN-1" target="_blank" class="link-projeto"><br>Ver no Figma<i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="frontend">
+                   <h3>Aplicação Web – Tutorial Qt Creator com C++</h3>
+                    <p>
+                        Projeto colaborativo de um site com tutorial sobre a utilização
+                        do Qt Creator com C++.
+                    </p>
+                    <span class="techs">HTML • CSS </span>
+                    <a href="https://beatrizmbrm.github.io/Tutorial-Qt-com-C-PI2022-/" target="_blank" class="link-projeto"><br>Ver Aplicação<i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="frontend">
+                    <h3>Aplicação Web - Agrosense</h3>
+                    <p>
+                        Aplicação desenvolvida em colaboração, que utiliza sensores em plantações
+                        para o controle e a irrigação automatizada da água.
+                    </p>
+                    <span class="techs">HTML • CSS • JavaScript </span>
+                    <a href="https://github.com/luciocauper/agrosense-front" target="_blank" class="link-projeto"><br>Repositório GitHub <i class="fab fa-github"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="frontend">
+                    <h3>Agenda de Contatos</h3>
+                    <p>
+                        Aplicação simples de agenda de contatos com operações de CRUD.
+                    </p>
+                    <span class="techs">HTML • CSS • JavaScript </span>
+                    <a href="https://beatrizmbrm.github.io/CRUD-Agenda_de_contatos/" target="_blank" class="link-projeto"><br>Ver Aplicação<i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="frontend">
+                    <h3>Tela de Login</h3>
+                    <p> Interface de tela de login para aplicação web.</p>
+                    <span class="techs">HTML • CSS </span>
+                    <a href="https://github.com/beatrizmbrm/tela-de-login" target="_blank" class="link-projeto"><br>Repositório GitHub <i class="fab fa-github"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="frontend">
+                    <h3>Calculadora Simples</h3>
+                    <p>Calculadora com operações de adição, subtração, multiplicação e divisão.</p>
+                    <span class="techs">HTML • CSS • JavaScript </span>
+                    <a href="https://github.com/beatrizmbrm/calculadora_simples" target="_blank" class="link-projeto"><br>Repositório GitHub <i class="fab fa-github"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="ia">
+                    <h3>Dry Bean Classification</h3>
+                    <p>Machine learning project to classify dry bean types using physical attributes.</p>
+                    <span class="techs">ChatGPT • Prompt Engineering</span>
+                    <a href="https://github.com/beatrizmbrm/ClassiDryBean" target="_blank" class="link-projeto"><br>Repositório GitHub <i class="fab fa-github"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="ia">
+                    <h3>Classificação IrisData</h3>
+                    <p>
+                        Análise exploratória e modelagem preditiva utilizando o clássico
+                        conjunto de dados Iris. O projeto envolve pré-processamento de dados,
+                        visualização, seleção de características, avaliação de modelos
+                        e testes estatísticos.
+                    </p>
+                    <span class="techs">Python, Pandas, Scikit-learn, Matplotlib</span>
+                    <a href="https://github.com/beatrizmbrm/IrisData-ML" target="_blank" class="link-projeto"><br>Repositório GitHub <i class="fab fa-github"></i></a>
+                </article>
+
+                <article class="card project-card" data-category="ia">
+                  <h3>Classificação de Imagens com Deep Learning – Cats and Dogs</h3>
+                    <p>
+                        Aplicação de técnicas de deep learning e transfer learning
+                        para classificação binária de imagens.
+                    </p>
+                    <span class="techs">Python, Pandas, Scikit-learn, Matplotlib</span>
+                    <a href="https://github.com/beatrizmbrm/catANDdog" target="_blank" class="link-projeto"><br>Repositório GitHub <i class="fab fa-github"></i></a>
+                </article>
+
+            </div>
+        </section>
+
+       <section id="destaque" class="destaque section-padding container">
+    <h2 class="section-title">Destaques</h2>
+
+    <div class="destaque-grid">
+
+        <article class="card destaque-card" data-category="destaque">
+            <img src="assets/img/certificadoCBIC.jpg" alt="Certificado CBIC 2025" class="project-img">
+            <h3>Artigo Publicado - A comparative analysis of machine learning techniques to dry bean grain classification</h3>
+            <p>
+                Artigo publicado no CBIC 2025, sobre a classificação de sementes
+                de feijão utilizando técnicas de machine learning.
+            </p>
+            <span class="Area">Área temática: IA para negócios e indústria</span>
+        </article>
+
+        <article class="card destaque-card" data-category="destaque">
+            <img src="assets/img/certificadoWSIS.png" alt="Certificado WSIS 2025" class="project-img">
+            <h3>Artigo Publicado - Fatores Autopercebidos por Estudantes de TI na Primeira Disciplina de Programação</h3>
+            <p>Artigo publicado no WSIS 2025.</p>
+        </article>
+
+    </div>
+</section>
+
+
+        <section id="contato" class="contato section-padding container">
+            <h4 class="section-title">Ficarei feliz em falar com você!</h4>
+
+                <div class="social-links-container">
+                    <h3>Conecte-se:</h3>
+                    <a href="mailto:brodriguesmartins00@gmail.com" target="_blank" aria-label="Enviar um e-mail para Beatriz">
+                        <i class="fas fa-envelope"></i> brodriguesmartins00@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/beatriz-rodrigues-054173210/" target="_blank" aria-label="Perfil do LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/beatrizmbrm" target="_blank" aria-label="Perfil do GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.behance.net/beatrizrodrigu357" target="_blank" aria-label="Perfil do Behance">
+                        <i class="fab fa-behance"></i> Behance
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 - Portfólio Beatriz Rodrigues. Todos os direitos reservados.</p>
+            
+            <a href="#home" class="back-to-top" aria-label="Voltar ao topo da página"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>
